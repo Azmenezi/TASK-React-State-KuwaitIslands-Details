@@ -4,8 +4,14 @@ export default function IslandForm({ island }) {
       <h2>{island.name}</h2>
       <img src={island.img} alt={island.name} />
       <h3>Book a trip to {island.name} island</h3>
-      <input placeholder="Type Full Name" />
-      <input placeholder="Type Phone Number" />
+      <input className="fullName" placeholder="Type Full Name" />
+      <input
+        className="pnone"
+        type="tel"
+        id="phone"
+        pattern="[0-9]{8}"
+        placeholder="Type Phone Number"
+      />
       <button className="book" onClick={() => {}}>
         Book for today!
       </button>
