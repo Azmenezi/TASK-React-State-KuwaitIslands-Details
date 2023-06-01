@@ -1,8 +1,7 @@
-import { React, useState } from "react";
+import { React } from "react";
 export default function Island({ island, setIsland }) {
   const handleIslands = () => {
     setIsland(island);
-    console.log(island);
   };
   return (
     <div className="Island" onClick={handleIslands}>
